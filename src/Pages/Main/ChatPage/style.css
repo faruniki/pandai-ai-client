@@ -1,0 +1,174 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.chat-window {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 4vh;
+  height: 90vh;
+  background-color: #1d1544;
+  border-radius: 10px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.question,
+.answer {
+  display: flex;
+  margin-bottom: 30px;
+  width: 80%;
+}
+
+.question {
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+.answer {
+  justify-content: flex-start;
+}
+
+.question-text {
+  text-align: right;
+  margin-right: 6px;
+}
+
+.answer-text {
+  text-align: left;
+}
+
+.answer-header {
+  display: flex;
+  margin-bottom: 4px;
+}
+
+.question-header {
+  display: flex;
+  margin-bottom: 4px;
+  justify-content: flex-end;
+}
+
+.question-body,
+.answer-body {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.question-author,
+.answer-author {
+  color: #efefef;
+  margin: 0;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.question-time,
+.answer-time {
+  color: #94a3b8;
+  margin: 0 0 0 10px;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.question-message,
+.answer-message {
+  color: #efefef;
+  margin: 0;
+  padding: 10px 20px;
+  font-weight: 400;
+  font-size: 14px;
+  background-color: #332578;
+  border-radius: 20px;
+}
+
+.answer-icon {
+  margin-right: 6px;
+}
+
+.chat-footer {
+  padding: 10px;
+  background-color: #1d1544;
+  border-top: 1px solid #281c62;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 30px;
+  background-color: #efefef;
+  padding: 3px 5px;
+  max-width: 84%;
+  margin: auto;
+}
+
+.chat-input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 14px;
+  padding: 10px;
+  font-family: Poppins, sans-serif;
+  border-radius: 50px;
+  color: #7a7a7a;
+  background-color: #efefef;
+}
+
+.send-button {
+  background-color: #6248ff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  outline: none;
+}
+
+.footer-text {
+  color: #94a3b8;
+  margin: 10px;
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+}
+
+.italic-text {
+  font-style: italic;
+}
+
+@media only screen and (max-width: 768px) {
+  .chat-window {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    height: 100%;
+  }
+
+  .chat-content {
+    padding: 0px 10px;
+    margin-top: 10px;
+  }
+
+  .footer-text {
+    font-size: 10px;
+  }
+
+  .question,
+  .answer {
+    width: 90%;
+  }
+}

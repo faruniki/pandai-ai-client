@@ -1,0 +1,48 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px #5b49ae;
+  padding: 15px 18px;
+}
+
+.navbar-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-title,
+.navbar-subtitle,
+.navbar-username {
+  color: #efefef;
+  margin: 0;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.navbar-title {
+  font-weight: 700;
+}
+
+.navbar-subtitle,
+.navbar-username {
+  font-weight: 500;
+}
+
+.navbar-divider {
+  margin: 6px;
+  color: #efefef;
+  font-size: 14px;
+}
+
+.navbar-icon {
+  margin: 0;
+  color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-subtitle,
+    .navbar-title,
+    .navbar-username{
+        font-size: 12px;
+    }
+  }
