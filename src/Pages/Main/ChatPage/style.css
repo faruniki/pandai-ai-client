@@ -14,12 +14,27 @@
   overflow: auto;
   display: flex;
   flex-direction: column;
+  scrollbar-width: thin;
+  scrollbar-color: #3b306d #1d1544;
 }
 
 .chat-content {
   flex: 1;
   padding: 20px;
   overflow-y: auto;
+}
+
+.chat-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chat-content::-webkit-scrollbar-track {
+  background: #1d1544;
+}
+
+.chat-content::-webkit-scrollbar-thumb {
+  background: #6248ff;
+  border-radius: 10px;
 }
 
 .question,
