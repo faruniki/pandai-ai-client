@@ -1,13 +1,14 @@
 import React from "react";
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import './navchat.css';
+import PandaiLogo from "../PandaiLogo.png"
 
 function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-section">
         <div>
-          <p className="navbar-title">Pandai CHAT</p>
+          <img src={PandaiLogo} alt="Pandai Logo" className="navbar-image" />
         </div>
         <p className="navbar-divider">|</p>
         <div>

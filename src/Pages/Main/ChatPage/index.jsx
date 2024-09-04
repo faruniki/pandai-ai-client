@@ -3,6 +3,8 @@ import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 import NavbarChat from "../../../Components/Navbar/NavbarChat";
 import "./style.css";
+import PandaiSquare from "../../../Components/PandaiSquare.png"
+
 
 function ChatPage() {
   const [messages, setMessages] = useState([
@@ -75,7 +77,7 @@ function ChatPage() {
             <div key={message.id} className={message.type}>
               {message.type === "answer" && (
                 <div className={`${message.type}-icon`}>
-                  <AccountCircleIcon sx={{ fontSize: "40px", margin: 0, color: "#fff" }} />
+                  <img src={PandaiSquare} alt="Pandai Square" className="logo-image" />
                 </div>
               )}
               <div className={`${message.type}-text`}>

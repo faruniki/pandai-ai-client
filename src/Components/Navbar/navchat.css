@@ -10,7 +10,6 @@
   justify-content: space-between;
 }
 
-.navbar-title,
 .navbar-subtitle,
 .navbar-username {
   color: #efefef;
@@ -19,8 +18,10 @@
   font-size: 14px;
 }
 
-.navbar-title {
-  font-weight: 700;
+.navbar-image {
+  height: 34px;
+  width: auto;
+  filter: brightness(0) invert(1);
 }
 
 .navbar-subtitle,
@@ -41,7 +42,6 @@
 
 @media only screen and (max-width: 768px) {
     .navbar-subtitle,
-    .navbar-title,
     .navbar-username{
         font-size: 12px;
     }
